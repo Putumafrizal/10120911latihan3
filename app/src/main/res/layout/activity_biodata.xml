@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiodataActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewPanggilan"
+            style="@style/textTitleNunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panggilan"
+            android:textSize="@dimen/text_size_24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_70dp"
+            android:backgroundTint="@color/colorLine"
+            android:inputType="textPersonName"
+            android:hint="@string/hintName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPanggilan" />
+
+        <TextView
+            android:id="@+id/textViewUmur"
+            style="@style/textTitleNunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/umur"
+            android:textSize="@dimen/text_size_24sp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNama" />
+        <EditText
+            android:id="@+id/editTextUmur"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_70dp"
+            android:backgroundTint="@color/colorLine"
+            android:inputType="number"
+            android:hint="@string/hintUmur"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUmur" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSelanjutnya"
+        style="@style/textTitleRubik"
+        android:layout_width="@dimen/dimen_250dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginBottom="@dimen/dimen_45dp"
+        android:background="@drawable/button_login_gradient"
+        android:text="@string/selanjutnya"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

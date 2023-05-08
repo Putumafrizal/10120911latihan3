@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/backgroundColor"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView2"
+        style="@style/textTitleNunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:text="@string/kodeTitle"
+        android:textSize="@dimen/text_size_24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textBodyRubik"
+        android:text="@string/kodeBody"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:textSize="@dimen/text_size_15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextKodeKeluarga"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:inputType="number"
+        android:hint="@string/hintKode"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_14sp"
+        android:background="@drawable/input_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textBodyDetail"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_22dp"
+        android:gravity="center"
+        android:text="@string/detailBody"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextKodeKeluarga"
+        android:textSize="@dimen/text_size_11sp"
+        style="@style/textBodyRubik"
+        app:layout_constraintStart_toStartOf="@+id/editTextKodeKeluarga"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKodeKeluarga" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMulai"
+        style="@style/textTitleRubik"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:background="@drawable/button_login_gradient"
+        android:text="@string/mulai"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBodyDetail" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textBodyKedua"
+                style="@style/textBodyRubik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:text="@string/belumKode"
+                android:textSize="@dimen/text_size_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonKode"
+                style="@style/textTitleRubik"
+                android:layout_width="@dimen/dimen_350dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/button_kode"
+                android:text="@string/beliKode"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBodyKedua"
+                app:layout_constraintVertical_bias="0.4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

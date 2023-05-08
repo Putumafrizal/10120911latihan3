@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lat3-IF10K-10120917-RistianAditya</string>
+    <string name="title_welcome_screen">Monitory Membantu Anda \n Mengontrol HP Anak</string>
+    <string name="mulai">Mulai</string>
+    <string name="detailBody">Dengan menekan tombol di bawah ini berarti Anda menyetujui &lt;b>Ketentuan Pengguna&lt;/b> dan &lt;b>Kebijakan Data&lt;/b> kami</string>
+    <string name="kodeWarning">Kode Keluarga Kosong :(</string>
+    <string name="dataWarning">Data Kosong :(</string>
+    <string name="ups">Ups, anda belum memasukan kode keluarga !!!</string>
+    <string name="dataDiri">Ups, anda belum memasukan data diri !!!</string>
+    <string name="oke">Oke</string>
+    <string name="kodeTitle">Kode Keluarga</string>
+    <string name="kodeBody">Ketikkan kode keluarga yang Ayah Bunda \nmiliki disini</string>
+    <string name="hintKode">Tuliskan Kode Keluarga disini</string>
+    <string name="belumKode">Belum punya kode keluarga?</string>
+    <string name="beliKode">Beli Kode Keluarga Disini</string>
+    <string name="panggilan">Nama Panggilan Kamu</string>
+    <string name="hintName">Contoh : Budi</string>
+    <string name="umur">Umur Kamu</string>
+    <string name="hintUmur">Contoh : 12</string>
+    <string name="selanjutnya">Selanjutnya</string>
+</resources>
